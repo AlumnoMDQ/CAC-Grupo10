@@ -1,0 +1,72 @@
+@media (prefers-reduced-motion: no-preference) {
+
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+header {
+    width: 100%;
+    background-color: #dd7513; 
+    
+}
+#logo {
+    width: max(100px, 18vw);
+    background-color: #dd7513;
+    aspect-ratio: 35 / 4;
+    padding: 0.4rem;
+}
+h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+}
+
+ul { 
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #724502;
+  }
+  
+  li {
+    margin-left: 280    px;
+        display: inline-block;
+  }
+  
+  li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #724502;
+  } 
+  /*nav{
+    height: 60px;
+    background-color:#17181C;
+    text-align: center;
+  }
+
+  nav ul{
+     list-style: none;
+     display: inline-block;
+     padding:18px;
+  }
+
+  nav ul li{
+      float: left;
+      margin-top: 20px;
+  }
+
+  nav ul li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 18px;
+  }
+
+  nav ul li a:hover{
+    background-color: #929fb3;
+  }*/
+  
