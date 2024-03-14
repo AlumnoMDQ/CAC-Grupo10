@@ -7,7 +7,7 @@
 
 header {
     width: 100%;
-    background-color: #dd7513; 
+    background-color: #dd7513c9; 
     
 }
 #logo {
@@ -39,18 +39,23 @@ ul {
   }
   
   li a:hover {
-    background-color: #724502;
+    background-color: #724502e1;
   }
   
   body{
-    background-color: #dd7513;
+    background-color: #dd7513bd;
 
   }
   div#parrafo1{
     text-align: center;
-    text-decoration: overline;
+    margin-left: 150px;
+    margin-top: 150px;
+    width: 1600px;
+    text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-wrap: normal;
     writing-mode: horizontal-tb;
     color: antiquewhite;
   }
+  .caja2 { 
+    background:#00000005 }
