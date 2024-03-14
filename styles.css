@@ -41,3 +41,16 @@ ul {
   li a:hover {
     background-color: #724502;
   }
+  
+  body{
+    background-color: #dd7513;
+
+  }
+  div#parrafo1{
+    text-align: center;
+    text-decoration: overline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-wrap: normal;
+    writing-mode: horizontal-tb;
+    color: antiquewhite;
+  }
