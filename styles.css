@@ -40,33 +40,4 @@ ul {
   
   li a:hover {
     background-color: #724502;
-  } 
-  /*nav{
-    height: 60px;
-    background-color:#17181C;
-    text-align: center;
   }
-
-  nav ul{
-     list-style: none;
-     display: inline-block;
-     padding:18px;
-  }
-
-  nav ul li{
-      float: left;
-      margin-top: 20px;
-  }
-
-  nav ul li a {
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 20px;
-      padding: 18px;
-  }
-
-  nav ul li a:hover{
-    background-color: #929fb3;
-  }*/
-  
