@@ -43,7 +43,7 @@ ul {
   }
   
   body{
-    background-color: #dd7513bd;
+    background-color: #ffffff;
 
   }
   div#parrafo1{
@@ -55,7 +55,6 @@ ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-wrap: normal;
     writing-mode: horizontal-tb;
-    color: antiquewhite;
+    color: #724502;
   }
-  .caja2 { 
-    background:#00000005 }
+  .caja2 { }
