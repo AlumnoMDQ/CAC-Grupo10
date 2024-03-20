@@ -19,25 +19,48 @@ body{
     display: flex;
 }
 
-ul { 
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #724502;
-  }
-  
-  li {
-    margin-left: 13%;
-        display: inline-block;
-  }
-  
-  li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #724502e1;
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #da7707;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: rgb(34, 31, 31);
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: #555;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
     
   .parrafo{
     text-align: center;
@@ -50,5 +73,4 @@ ul {
     writing-mode: horizontal-tb;
     color: #724502;
   }
-  
   
