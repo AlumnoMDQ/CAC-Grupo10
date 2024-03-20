@@ -26,7 +26,7 @@ ul {
   }
   
   li {
-    margin-left: 280px;
+    margin-left: 13%;
         display: inline-block;
   }
   
@@ -41,9 +41,9 @@ ul {
     
   .parrafo{
     text-align: center;
-    margin-left: 150px;
+    margin-left: 5%;
     margin-top: 150px;
-    width: 1600px;
+    width: 90%;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-wrap: normal;
