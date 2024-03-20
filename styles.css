@@ -6,20 +6,17 @@
 }
 
 header {
-    width: 100%;
-    background-color: #dd7513c9; 
-    
+    max-height: 200px;
+    background-color: #dd7513c9;     
 }
+body{
+  background-color: #ffffff;
+
+}
+
 #logo {
-    width: max(100px, 18vw);
-    background-color: #dd7513;
-    aspect-ratio: 35 / 4;
-    padding: 0.4rem;
-}
-h1 {
-    color: #f1be32;
-    font-size: 25px;
-    text-align: center;
+    max-height: 100px;
+    display: flex;
 }
 
 ul { 
@@ -29,7 +26,7 @@ ul {
   }
   
   li {
-    margin-left: 280px;
+    margin-left: 13%;
         display: inline-block;
   }
   
@@ -41,20 +38,17 @@ ul {
   li a:hover {
     background-color: #724502e1;
   }
-  
-  body{
-    background-color: #ffffff;
-
-  }
-  div#parrafo1{
+    
+  .parrafo{
     text-align: center;
-    margin-left: 150px;
+    margin-left: 5%;
     margin-top: 150px;
-    width: 1600px;
+    width: 90%;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-wrap: normal;
     writing-mode: horizontal-tb;
     color: #724502;
   }
-  .caja2 { }
+  
+  
