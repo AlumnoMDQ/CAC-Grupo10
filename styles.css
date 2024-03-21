@@ -12,8 +12,8 @@ header {
   background-color: #dd7513c9;     
 }
 body{
-background-color: #ffffff;
-
+  background: rgb(238,171,107);
+  background: linear-gradient(90deg, rgba(238,171,107,1) 0%, rgba(255,243,219,1) 35%, rgba(255,243,219,1) 77%, rgba(238,171,107,0.8421743697478992) 100%);
 }
 
 #logo {
