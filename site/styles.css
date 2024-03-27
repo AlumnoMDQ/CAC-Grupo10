@@ -12,7 +12,6 @@ header {
   max-height: 50%;
   background-color: #dd7513c9;
 }
-
 body {
   background: rgb(238, 171, 107);
   background: linear-gradient(90deg, rgba(238, 171, 107, 1) 0%, rgba(255, 243, 219, 1) 35%, rgba(255, 243, 219, 1) 77%, rgba(238, 171, 107, 0.8421743697478992) 100%);
@@ -80,18 +79,29 @@ nav ul li:hover {
   color: #724502;
 }
 .promo{
-  display:grid
-}
-.cantGente{
-  margin-top: 10%;
-  display: flex;
+  width: 300px;
+  height: 480px;
+  background-color: #2e282018;
+  box-shadow: 10px 10px 300px -43px rgba(0,0,0,0.75);
+  border-radius: 5px;
+  min-width: 300px;
 }
 
+.cantGente{
+  margin-top: 10%;
+
+  
+}
+h4{
+  text-align: center;
+  
+}
 .tipoPromo {
   text-align: center;
   margin-left: 5%;
   margin-top: 5%;
   width: 90%;
+  font-size: 30px;
   font-style: oblique;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   overflow-wrap: normal;
@@ -99,9 +109,14 @@ nav ul li:hover {
 }
 
 .listProm {
-  border: 4px double rgba(0, 0, 0, 0.281);
-  background-color: rgba(0, 0, 0, 0.055);
   list-style: none;
-  padding: 20px;
   max-width: fit-content;
+  margin: auto;
+}
+
+.container{
+flex-wrap: wrap;
+gap: 5px;
+display: flex;
+justify-content: space-around;
 }
