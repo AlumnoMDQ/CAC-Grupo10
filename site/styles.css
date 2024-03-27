@@ -63,6 +63,7 @@ nav ul li:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .parrafo{
   text-align: center;
   margin-left: 5%;
@@ -74,24 +75,28 @@ nav ul li:hover {
   writing-mode: horizontal-tb;
   color: #724502;
 }
-
-.titPromo {
-display: inline-flexbox;
-text-align: center;
+.promo{
+  border: 2px solid black;
+  background: #e29f0f6b;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  height: fit-content;
 }
 
-.cantGente{
-  display: inline-block;
-  margin-top: 2%;
-  
-  
-}
+
 .listProm{
   border: 4px double rgba(0, 0, 0, 0.281);
   background-color: rgba(0, 0, 0, 0.055);  
+  list-style: none;
   padding: 20px;
   margin: 10px;
-  text-align: left;
-  list-style: none;
+  text-align: center;
   max-width: fit-content;
+  display:flex;  
+}
+.cantGente{
+  display: flex;
 }
