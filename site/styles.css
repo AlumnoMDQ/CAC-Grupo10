@@ -7,6 +7,7 @@
   }
 }
 
+
 header {
   max-height: 50%;
   background-color: #dd7513c9;
@@ -15,6 +16,8 @@ header {
 body {
   background: rgb(238, 171, 107);
   background: linear-gradient(90deg, rgba(238, 171, 107, 1) 0%, rgba(255, 243, 219, 1) 35%, rgba(255, 243, 219, 1) 77%, rgba(238, 171, 107, 0.8421743697478992) 100%);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
 }
 
 #logo {
@@ -76,30 +79,29 @@ nav ul li:hover {
   writing-mode: horizontal-tb;
   color: #724502;
 }
-
-.promo {
-  border: 2px solid black;
-  background: #e29f0f6b;
-  padding: 20px;
+.promo{
+  display:grid
+}
+.cantGente{
+  margin-top: 10%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-content: center;
-  height: fit-content;
 }
 
+.tipoPromo {
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 90%;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-wrap: normal;
+  color: #724502;
+}
 
 .listProm {
   border: 4px double rgba(0, 0, 0, 0.281);
   background-color: rgba(0, 0, 0, 0.055);
   list-style: none;
   padding: 20px;
-  margin: 10px;
-  text-align: center;
   max-width: fit-content;
-  display: flex;
-}
-
-.cantGente {
-  display: flex;
 }
