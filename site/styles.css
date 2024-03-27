@@ -1,19 +1,22 @@
 @media (prefers-reduced-motion: no-preference) {
 
   * {
-      scroll-behavior: smooth;
-      margin: 0;
-      padding: 0;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
   }
 }
 
+
 header {
   max-height: 50%;
-  background-color: #dd7513c9;     
+  background-color: #dd7513c9;
 }
-body{
-  background: rgb(238,171,107);
-  background: linear-gradient(90deg, rgba(238,171,107,1) 0%, rgba(255,243,219,1) 35%, rgba(255,243,219,1) 77%, rgba(238,171,107,0.8421743697478992) 100%);
+body {
+  background: rgb(238, 171, 107);
+  background: linear-gradient(90deg, rgba(238, 171, 107, 1) 0%, rgba(255, 243, 219, 1) 35%, rgba(255, 243, 219, 1) 77%, rgba(238, 171, 107, 0.8421743697478992) 100%);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
 }
 
 #logo {
@@ -22,10 +25,10 @@ body{
 }
 
 nav ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-background-color: #da7707;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #da7707;
 }
 
 nav ul li {
@@ -63,7 +66,8 @@ nav ul li:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.parrafo{
+
+.parrafo {
   text-align: center;
   margin-left: 5%;
   margin-top: 5%;
@@ -74,24 +78,45 @@ nav ul li:hover {
   writing-mode: horizontal-tb;
   color: #724502;
 }
-
-.titPromo {
-display: inline-flexbox;
-text-align: center;
+.promo{
+  width: 300px;
+  height: 480px;
+  background-color: #2e282018;
+  box-shadow: 10px 10px 300px -43px rgba(0,0,0,0.75);
+  border-radius: 5px;
+  min-width: 300px;
 }
 
 .cantGente{
-  display: inline-block;
-  margin-top: 2%;
-  
+  margin-top: 10%;
+
   
 }
-.listProm{
-  border: 4px double rgba(0, 0, 0, 0.281);
-  background-color: rgba(0, 0, 0, 0.055);  
-  padding: 20px;
-  margin: 10px;
-  text-align: left;
+h4{
+  text-align: center;
+  
+}
+.tipoPromo {
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 90%;
+  font-size: 30px;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-wrap: normal;
+  color: #724502;
+}
+
+.listProm {
   list-style: none;
   max-width: fit-content;
+  margin: auto;
+}
+
+.container{
+flex-wrap: wrap;
+gap: 5px;
+display: flex;
+justify-content: space-around;
 }
