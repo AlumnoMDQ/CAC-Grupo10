@@ -12,8 +12,10 @@
 }
 
 header {
-  max-height: 50%;
+  max-height: 70%;
   background-color: #dd7513c9;
+  background-image: url(imgs/header.jpeg);
+  opacity: 0.8;
 }
 
 body {
@@ -26,6 +28,7 @@ body {
 #logo {
   max-height: 100px;
   display: flex;
+  opacity: 1;
 }
 nav {
   width: 100%;
@@ -33,6 +36,7 @@ nav {
   background:#dd7513c9;
   position: sticky;
   top: 0;
+  opacity: 0.9;
 }
 nav ul {
   list-style-type: none;
@@ -50,6 +54,7 @@ nav ul li a {
   color: rgb(34, 31, 31);
   padding: 10px 30px;
   text-decoration: none;
+  
 }
 
 nav ul li:hover {
@@ -123,6 +128,7 @@ h4{
   list-style: none;
   max-width: fit-content;
   margin: auto;
+  
 }
 
 .container{
@@ -130,4 +136,11 @@ flex-wrap: wrap;
 gap: 5px;
 display: flex;
 justify-content: space-around;
+
+
+}
+.promo {
+  background: url(imgs/fondoCump.png);
+  background-size: cover;
+  opacity: 0.45;  
 }
