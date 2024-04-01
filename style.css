@@ -1,0 +1,45 @@
+* {
+        font-family: Arial, sans-serif;
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        color: #724502;
+    }
+
+    body{
+      background: linear-gradient(90deg, rgba(238, 171, 107, 1) 0%, rgba(255, 243, 219, 1) 35%, rgba(255, 243, 219, 1) 77%, rgba(238, 171, 107, 0.8421743697478992));
+    }
+    
+#logo {
+      width: 110px;
+      float: left;
+      height: auto;
+      margin-top: -28px;
+    }
+
+header {
+      background-color: #da7707; 
+      padding: 35px;
+      text-align: center;
+    }
+
+h1{
+      font-size: 30px;
+      text-align: center;
+      color: #724502;
+      width: 300px; 
+      margin: 0 auto; /* Establece los márgenes izquierdo y derecho a "auto" para centrar horizontalmente */
+      max-width: 800px; /* Ancho máximo del elemento */
+      padding: 5px;    
+}
+
+#historia{
+    margin: 35px auto 0;
+    max-width: 800px; /* Establece un ancho máximo para el contenido principal */
+    padding: 20px;
+    border: 1px solid #ccc; /* Agrega un borde alrededor del contenido principal */
+    border-radius: 10px;
+}
+
+      
+      /* Comentarios */
