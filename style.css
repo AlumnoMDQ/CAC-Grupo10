@@ -64,5 +64,13 @@ header {
     margin-top: 20px;
 }
 
+img {
+  width: 500px;
+  height: auto;
+  display: block; /* Asegura que la imagen se comporte como un bloque */
+  margin-left: auto; /* Centra horizontalmente */
+  margin-right: auto;
+}
+
       
       /* Comentarios */
