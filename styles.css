@@ -155,7 +155,7 @@ h4{
   text-align: center;
   
 }
-.tipoPromo {
+.tipoPromo, #consulta {
   text-align: center;
   margin: 2%;
   margin-left: 5%;
