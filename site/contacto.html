@@ -9,25 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
 </head>
 
 <body><header>
     <a href="../index.html"><img id="logo"
         src="https://github.com/AlumnoMDQ/CAC-Grupo10/blob/main/img/myfavlogo.png?raw=true"
         alt="Logo del emprendimiento"></a>
-    </header>
     <nav>
         <ul>
                     <li><a accesskey="n" href="./nosotros.html">Nosotros</a></li>
-                    <li class="dropdown"><a href="#">Nuestras Variedades</a>
-                        <ul class="dropdown-content">
-                            <li><a href="catalogo.html#Tartas">Tartas</a></li>
-                            <li><a href="catalogo.html#Tortas">Tortas</a></li>
-                            <li><a href="catalogo.html#Varios">Varios</a></li>
-                        </ul>
+                    <li class="dropdown"><a href="catalogo.html">Nuestras Variedades</a>
+
                     </li>
                     <li class="dropdown">
-                        <a href="#">Promociones</a>
+                        <a href="promociones.html#logo">Promociones</a>
+
                         <ul class="dropdown-content">
                             <li><a href="promociones.html">Cumpleaños</a></li>
                             <li><a href="promociones.html#Casamientos">Casamientos</a></li>
@@ -39,7 +36,38 @@
             </nav>
         </div>
     </header>
-    <p>contacto</p>
+    <body>
+        <h1 id="consulta">Formulario de consultas</h1>
+        <form action="javascript:alert('Hello there, I am being submitted');">
+            <fieldset>
+                <label for="nombre">Nombre: <input id="nombre" name="nombre" type="text" required /></label>
+                <label for="apellido">Apellido: <input id="apellido" name="apellido" type="text" required /></label>
+                <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+            </fieldset>
+            <fieldset>
+                <label for="edad">Ingrese su edad (años): <input id="edad" type="number" name="edad" min="15" max="120" /></label>
+                <label for="referencia">Como llegaste a nosotros?:
+              <select id="referencia" name="referencia">
+                <option value="">(Elige una opcion)</option>
+                <option value="1">Instagram/Facebook</option>
+                <option value="2">Google</option>
+                <option value="3">Recomendacion de un amigo</option>
+                <option value="4">Otra...</option>
+              </select>
+            </label>
+                <label for="consulta">Detalle de su consulta:
+              <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Tengo un cumple para..."></textarea>
+            </label>
+            <label for="Casamiento"><input id="casamiento" type="radio" name="tipo-de-fiesta" class="form-cir" /> Casamiento</label>
+                <label for="cumpleaños"><input id="cumpleaños" type="radio" name="tipo-de-fiesta" class="form-cir" /> Cumpleaños</label>
+                <label for="otro-tipo"><input id="otro-tipo" type="radio" name="tipo-de-fiesta" class="form-cir" /> Otro tipo de evento</label>
+            </fieldset>
+            <fieldset>
+                <p>Nos pondremos en contacto a la brevedad.</p>
+            </fieldset>
+            
+            <input type="submit" value="Submit" />
+        </form>
 </body>
 
 </html>
