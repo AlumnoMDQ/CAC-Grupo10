@@ -15,7 +15,7 @@ header {
   max-height: 70%;
   background-color: #dd7513c9;
   background-image: url(imgs/header.jpeg);
-  opacity: 0.8;
+  box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
 }
 
 .social--face {
@@ -73,25 +73,22 @@ nav {
   background:#dd7513c9;
   position: sticky;
   top: 0;
-  opacity: 0.9;
   text-transform: capitalize;
   text-align: center;
-  border-style: groove;
-  border-width: 2px;
-  border-color: black;
 }
+
 nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
   background-color: #da7707;
 }
 
-nav ul li {
-  display: inline-block;
-}
-
 nav ul li a {
+  width: 200px;
   display: block;
   color: rgb(34, 31, 31);
   padding: 10px 30px;
@@ -142,7 +139,6 @@ nav ul li:hover {
   box-shadow: 10px 10px 300px -43px rgba(0,0,0,0.75);
   border-radius: 5px;
   min-width: 300px;
-  background: url(imgs/fondoCump.png);
   background-size: cover;
 }
 
@@ -193,7 +189,6 @@ justify-content: space-around;
   padding: 5px;    
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
 
 #historia{
 margin: 35px auto 0;
@@ -294,53 +289,3 @@ form {
   margin: 0 auto;
   padding-bottom: 2em;
 }
-=======
-#titulo{
-      font-size: 30px;
-      text-align: center;
-      color: #724502;
-      width: 300px; 
-      margin: 0 auto; /* Establece los márgenes izquierdo y derecho a "auto" para centrar horizontalmente */
-      max-width: 800px; /* Ancho máximo del elemento */
-      padding: 5px;    
-      margin-bottom: 20px;
-}
-
-#historia{
-    margin: 35px auto 0;
-    max-width: 800px; /* Establece un ancho máximo para el contenido principal */
-    padding: 20px;
-    border: 1px solid #ccc; /* Agrega un borde alrededor del contenido principal */
-    border-radius: 10px;
-    background-color: #f7e3c6; /* Cambia el color de fondo para resaltar el contenido */
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-#historia1{
-    margin: 35px auto 0;
-    max-width: 800px; /* Establece un ancho máximo para el contenido principal */
-    padding: 20px;
-    border: 1px solid #ccc; /* Agrega un borde alrededor del contenido principal */
-    border-radius: 10px;
-}
-
-.container {
-  text-align: justify;
-  line-height: 1.5;
-}
-
-#Subtitulo { 
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-img {
-  width: 500px;
-  height: auto;
-  display: block; /* Asegura que la imagen se comporte como un bloque */
-  margin-left: auto; /* Centra horizontalmente */
-  margin-right: auto;
-}
->>>>>>> 6a51be9159370b13e0ad4e325409a7194e0c51c6
