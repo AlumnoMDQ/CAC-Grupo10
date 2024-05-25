@@ -136,7 +136,7 @@ nav ul li:hover {
   writing-mode: horizontal-tb;
   color: #724502;
 }
-.promo{
+.promo, .catasec{
   width: 300px;
   height: 480px;
   background-color: #2e282018;
@@ -155,7 +155,7 @@ h4{
   text-align: center;
   
 }
-.tipoPromo, #consulta {
+.tipoPromo, #consulta, .catalogoimg {
   text-align: center;
   margin: 2%;
   margin-left: 5%;
@@ -169,14 +169,14 @@ h4{
   text-transform: capitalize;
 }
 
-.listProm {
+.listProm, .catasec {
   list-style: none;
   max-width: fit-content;
   margin: auto;
   
 }
 
-.container{
+.container, .container2{
 flex-wrap: wrap;
 gap: 5px;
 display: flex;
@@ -214,7 +214,7 @@ border: 1px solid #ccc; /* Agrega un borde alrededor del contenido principal */
 border-radius: 10px;
 }
 
-.container {
+.container, .container2 {
 text-align: justify;
 line-height: 1.5;
 }
@@ -279,10 +279,6 @@ input[type="submit"] {
   min-width: 300px;
 }
 
-input[type="file"] {
-  padding: 1px 2px;
-}
-
 a {
   color: #dfdfe2;
 }
@@ -292,15 +288,4 @@ form {
   min-width: 300px;
   margin: 0 auto;
   padding-bottom: 2em;
-}
-.catalogoimg{
-  max-width: fit-content;
-  max-height: fit-content;
-}
-
-.container2{
-  flex-wrap: wrap;
-gap: 5px;
-display: flex;
-justify-content: space-around;
 }
