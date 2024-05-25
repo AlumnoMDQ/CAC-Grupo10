@@ -168,6 +168,9 @@ h4{
   color: #724502;
   text-transform: capitalize;
 }
+.catalogoimg{
+  border-radius: 20px;
+}
 
 .listProm, .catasec {
   list-style: none;
@@ -219,7 +222,7 @@ text-align: justify;
 line-height: 1.5;
 }
 
-#Subtitulo { 
+.Subtitulo { 
 font-size: 18px;
 margin-top: 20px;
 }
@@ -292,11 +295,13 @@ form {
 
 
 .catalogoimg:hover, .catasec:hover{
-animation: keyName 1s ease-out forwards;
+animation: zoomIn 0.5s ease-out forwards;
+box-shadow: #6d6d6d;
 }
 
-@keyframes keyName{
+@keyframes zoomIn{
   100% {
-transform: scale(1.04);
+transform: scale(1.002);
   }
 }
+
