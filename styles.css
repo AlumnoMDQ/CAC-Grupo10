@@ -293,3 +293,14 @@ form {
   margin: 0 auto;
   padding-bottom: 2em;
 }
+.catalogoimg{
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.container2{
+  flex-wrap: wrap;
+gap: 5px;
+display: flex;
+justify-content: space-around;
+}
