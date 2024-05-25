@@ -289,3 +289,11 @@ form {
   margin: 0 auto;
   padding-bottom: 2em;
 }
+
+#pasteleriafoto {
+  transition: transform 0.3s ease;
+}
+
+#pasteleriafoto:hover {
+  transform: scale(1.1);
+}
