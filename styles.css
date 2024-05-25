@@ -289,3 +289,14 @@ form {
   margin: 0 auto;
   padding-bottom: 2em;
 }
+
+
+.catalogoimg:hover, .catasec:hover{
+animation: keyName 1s ease-out forwards;
+}
+
+@keyframes keyName{
+  100% {
+transform: scale(1.04);
+  }
+}
