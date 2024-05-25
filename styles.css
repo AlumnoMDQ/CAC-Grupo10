@@ -50,10 +50,10 @@ header {
 body {
   background: rgb(238, 171, 107);
   
-  background: linear-gradient(90deg, rgba(238, 171, 107) 0%, 
-        rgba(255, 243, 219) 35%, 
-rgba(255, 243, 219) 77%, 
-rgba(238, 171, 107) 100%);
+  background: linear-gradient(90deg, rgba(238, 171, 107), 
+        rgba(255, 243, 219), 
+rgba(255, 243, 219), 
+rgba(238, 171, 107));
   font-family: "Inter", sans-serif;
   font-style: normal;
 }
