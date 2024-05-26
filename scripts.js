@@ -6,10 +6,21 @@ const inputs = [
         document.querySelectorAll("form input, form textarea, form select")
     ),
 ];
-const invalidForm = () => inputs.some(input => !input.validity.valid);
+const nombreInput = /** @type {HTMLInputElement} */ (
+    document.querySelector("input[name='nombre']")
+);
+
+const containsNumbers = (str) => /\d/.test(str);
+
+const invalidForm = () => {
+    return inputs.some(input => !input.validity.valid) || containsNumbers(nombreInput.value);
+    alert("No se admiten numeros en nombre")
+};
 
 inputs.forEach(input =>
-    input.addEventListener("input", () =>
+    input.addEventListener("input", () => 
         Object.assign(submitButton, { disabled: invalidForm() }),
-    ),
+    )
 );
+
+Object.assign(submitButton, { disabled: invalidForm() });
