@@ -199,6 +199,19 @@ h4 {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 580px){
+  .fotoPaste{
+   display: none;
+  }
+
+};
+  
+}
+.fotoPaste{  
+height: fit-content;
+width: fit-content;
+  
+}
 .catalogoimg {
   border-radius: 20px;
   max-height: 60%;
