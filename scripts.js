@@ -13,10 +13,3 @@ inputs.forEach(input =>
         Object.assign(submitButton, { disabled: invalidForm() }),
     ),
 );
-
-/*
-
-const formData = Object.fromEntries(new FormData(event.currentTarget));
-
-traer data como objeto
-*/ 

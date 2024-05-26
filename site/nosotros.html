@@ -12,11 +12,14 @@
     <script src="./script.js"></script>
 </head>
 
-<body><header>
+<body>
+
+    <header class="headerHam">
     <a href="../index.html"><img id="logo"
-        src="https://github.com/AlumnoMDQ/CAC-Grupo10/blob/main/img/myfavlogo.png?raw=true"
+        src="https://raw.githubusercontent.com/AlumnoMDQ/CAC-Grupo10/main/imgs/myfavlogo.png"
         alt="Logo del emprendimiento"></a>
-    <nav>
+        <button class="menuHam" aria-label="Toggle menu">&#9776;</button>
+        <nav>
         <ul>
                     <li><a accesskey="n" href="#">Nosotros</a></li>
                     <li class="dropdown"><a href="catalogo.html">Nuestros Trabajos</a>
@@ -32,20 +35,23 @@
                         </ul>
                     </li>
                     <li><a accesskey="c" href="contacto.html">Contacto</a></li>
-                    <div class="socialico">
-                        <a href="https://facebook.com"><span class="social--face"></span></a>
-                        <a href="https://facebook.com"><span class="social--insta"></span></a>
-                        </div>
+
                 </ul>
             </nav>
         </div>
     </header>
+    <script>
+        document.querySelector('.menuHam').addEventListener('click', function() {
+          this.classList.toggle('active');
+          document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
     <main>
         <section id="historia">
         <h1 id="titulo">Nuestra historia</h1>
-        <img id="pasteleriafoto"
-        src="https://github.com/cata245/cata245/blob/main/pasteleria%20(1).png?raw=true" 
-        alt="Foto de la pastelería">
+        <div class="fotoPaste">
+        <img src="https://raw.githubusercontent.com/cata245/cata245/main/pasteleria%20(1).png" alt="Foto de la pastelería">
+        </div>
         <div class="container">
         <br>
         <p>En My Favorite Cake, nos enorgullece compartir nuestra historia con ustedes. Desde nuestros humildes comienzos hasta convertirnos en un destino confiable para los amantes de los postres, cada paso de nuestro viaje ha sido una dulce aventura.
@@ -65,4 +71,9 @@
         </section>
     </main>
 </body>
+<footer class="socialico">
+    <em>Seguinos en nuestras redes</em><div>
+  <a href="https://facebook.com" target="_blank"rel="noopener noreferrer"><span class="social--face"></span></a>
+  <a href="https://instagram.com"target="_blank"rel="noopener noreferrer"><span class="social--insta"></span></a>
+  </div></footer>
 </html>

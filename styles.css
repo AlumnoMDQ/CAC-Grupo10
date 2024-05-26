@@ -1,5 +1,5 @@
+/* General styles */
 @media (prefers-reduced-motion: no-preference) {
-
   * {
     scroll-behavior: smooth;
     margin: 0;
@@ -7,10 +7,45 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
-  
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 700px) {
+  .menuHam {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #dd7513c9;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    background-color: #da7707;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .headerHam {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menuHam.active + nav {
+    display: block;
+  }
 }
 
+/* Estilos generales para el header */
 header {
   max-height: 70%;
   background-color: #dd7513c9;
@@ -19,7 +54,7 @@ header {
 }
 
 .social--face {
-  display: inline-block;
+  display: inline-flex;
   width: 1.2em;
   height: 1.2em;
   --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' d='M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2'/%3E%3C/svg%3E");
@@ -30,8 +65,8 @@ header {
   mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
-  
 }
+
 .social--insta {
   display: inline-block;
   width: 1.2em;
@@ -44,32 +79,25 @@ header {
   mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
-  
 }
 
 body {
   background: rgb(238, 171, 107);
-  
-  background: linear-gradient(90deg, rgba(238, 171, 107), 
-        rgba(255, 243, 219), 
-rgba(255, 243, 219), 
-rgba(238, 171, 107));
+  background: linear-gradient(90deg, rgba(238, 171, 107), rgba(255, 243, 219), rgba(255, 243, 219), rgba(238, 171, 107));
   font-family: "Inter", sans-serif;
   font-style: normal;
 }
-.socialico{
+
+.socialico {
   float: right;
-  text-align: left;
-  
+  text-align: right;
 }
 
 #logo {
   max-height: 250px;
   max-width: 250px;
   display: flex;
-  
 }
-
 
 nav {
   width: 100%;
@@ -97,7 +125,6 @@ nav ul li a {
   color: rgb(34, 31, 31);
   padding: 10px 30px;
   text-decoration: none;
-  
 }
 
 nav ul li:hover {
@@ -139,7 +166,8 @@ nav ul li:hover {
   writing-mode: horizontal-tb;
   color: #724502;
 }
-.promo, .catasec{
+
+.promo, .catasec {
   width: 300px;
   height: 480px;
   background-color: #2e282018;
@@ -149,15 +177,14 @@ nav ul li:hover {
   background-size: cover;
 }
 
-.cantGente{
+.cantGente {
   margin-top: 10%;
+}
 
-  
-}
-h4{
+h4 {
   text-align: center;
-  
 }
+
 .tipoPromo, #titulo, .catalogoimg {
   text-align: center;
   margin: 2%;
@@ -171,7 +198,20 @@ h4{
   color: #724502;
   text-transform: capitalize;
 }
-.catalogoimg{
+
+@media screen and (max-width: 580px){
+  .fotoPaste{
+   display: none;
+  }
+
+};
+  
+.fotoPaste{  
+height: fit-content;
+width: fit-content;
+  
+}
+.catalogoimg {
   border-radius: 20px;
   max-height: 60%;
   max-width: 100%;
@@ -181,17 +221,16 @@ h4{
   list-style: none;
   max-width: fit-content;
   margin: auto;
-  
 }
 
-.container, .container2{
-flex-wrap: wrap;
-gap: 5px;
-display: flex;
-justify-content: space-around;
+.container, .container2 {
+  flex-wrap: wrap;
+  gap: 5px;
+  display: flex;
+  justify-content: space-around;
 }
 
-#titulo{
+#titulo {
   font-size: 30px;
   text-align: center;
   color: #724502;
@@ -202,42 +241,42 @@ justify-content: space-around;
   margin-bottom: 20px;
 }
 
-#historia{
-margin: 35px auto 0;
-max-width: 800px; /* Establece un ancho máximo para el contenido principal */
-padding: 20px;
-border: 1px solid #ccc; /* Agrega un borde alrededor del contenido principal */
-border-radius: 10px;
-background-color: #f7e3c6; /* Cambia el color de fondo para resaltar el contenido */
-padding: 40px;
-border-radius: 10px;
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+#historia {
+  margin: 35px auto 0;
+  max-width: 800px; /* Establece un ancho máximo para el contenido principal */
+  padding: 20px;
+  border: 1px solid #ccc; /* Agrega un borde alrededor del contenido principal */
+  border-radius: 10px;
+  background-color: #f7e3c6; /* Cambia el color de fondo para resaltar el contenido */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-#historia1{
-margin: 35px auto 0;
-max-width: 800px; /* Establece un ancho máximo para el contenido principal */
-padding: 20px;
-border: 1px solid #ccc; /* Agrega un borde alrededor del contenido principal */
-border-radius: 10px;
+#historia1 {
+  margin: 35px auto 0;
+  max-width: 800px; /* Establece un ancho máximo para el contenido principal */
+  padding: 20px;
+  border: 1px solid #ccc; /* Agrega un borde alrededor del contenido principal */
+  border-radius: 10px;
 }
 
 .container, .container2 {
-text-align: justify;
-line-height: 1.5;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 .Subtitulo { 
-font-size: 18px;
-margin-top: 20px;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 img {
-width: 500px;
-height: auto;
-display: block; /* Asegura que la imagen se comporte como un bloque */
-margin-left: auto; /* Centra horizontalmente */
-margin-right: auto;
+  width: 500px;
+  height: auto;
+  display: block; /* Asegura que la imagen se comporte como un bloque */
+  margin-left: auto; /* Centra horizontalmente */
+  margin-right: auto;
 }
 
 fieldset {
@@ -286,7 +325,8 @@ input[type="submit"] {
   border-color: white;
   min-width: 300px;
 }
-input:invalid{
+
+input:invalid {
   border-color: red;
   color: red;
 }
@@ -294,6 +334,7 @@ input:invalid{
 a {
   color: #dfdfe2;
 }
+
 form {
   width: 60vw;
   max-width: 500px;
@@ -302,22 +343,22 @@ form {
   padding-bottom: 2em;
 }
 
-
-.catalogoimg:hover, .catasec:hover{
-animation: zoomIn 0.5s ease-out forwards;
-box-shadow: #6d6d6d;
+.catalogoimg:hover, .catasec:hover {
+  animation: zoomIn 0.5s ease-out forwards;
+  box-shadow: #6d6d6d;
 }
 
-@keyframes zoomIn{
+@keyframes zoomIn {
   100% {
-transform: scale(1.002);
+    transform: scale(1.002);
   }
 }
 
-.botonEnviar{
+.botonEnviar {
   text-align: center;
   width: 100%;
   height: 30px;
   margin: 0 auto;
 }
+
 
