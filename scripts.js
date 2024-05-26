@@ -14,9 +14,3 @@ inputs.forEach(input =>
     ),
 );
 
-/*
-
-const formData = Object.fromEntries(new FormData(event.currentTarget));
-
-traer data como objeto
-*/ 
