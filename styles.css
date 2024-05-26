@@ -102,6 +102,7 @@ nav ul li a {
 
 nav ul li:hover {
   background-color: #5c32017c;
+  border-radius: 8px;
 }
 
 .dropdown {
@@ -115,6 +116,7 @@ nav ul li:hover {
   min-width: 100px;
   border: #724502;
   z-index: 1;
+  border-radius: 2px;
 }
 
 .dropdown-content li {
@@ -123,6 +125,7 @@ nav ul li:hover {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  border-radius: 7px;
 }
 
 .parrafo {
@@ -155,7 +158,7 @@ h4{
   text-align: center;
   
 }
-.tipoPromo, #consulta, .catalogoimg {
+.tipoPromo, #titulo, .catalogoimg {
   text-align: center;
   margin: 2%;
   margin-left: 5%;
@@ -167,6 +170,11 @@ h4{
   overflow-wrap: normal;
   color: #724502;
   text-transform: capitalize;
+}
+.catalogoimg{
+  border-radius: 20px;
+  max-height: 60%;
+  max-width: 100%;
 }
 
 .listProm, .catasec {
@@ -219,7 +227,7 @@ text-align: justify;
 line-height: 1.5;
 }
 
-#Subtitulo { 
+.Subtitulo { 
 font-size: 18px;
 margin-top: 20px;
 }
@@ -278,6 +286,10 @@ input[type="submit"] {
   border-color: white;
   min-width: 300px;
 }
+input:invalid{
+  border-color: red;
+  color: red;
+}
 
 a {
   color: #dfdfe2;
@@ -292,11 +304,20 @@ form {
 
 
 .catalogoimg:hover, .catasec:hover{
-animation: keyName 1s ease-out forwards;
+animation: zoomIn 0.5s ease-out forwards;
+box-shadow: #6d6d6d;
 }
 
-@keyframes keyName{
+@keyframes zoomIn{
   100% {
-transform: scale(1.04);
+transform: scale(1.002);
   }
 }
+
+.botonEnviar{
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+}
+
