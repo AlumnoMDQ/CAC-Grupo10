@@ -6,9 +6,30 @@
     padding: 0;
   }
 }
-
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 700px) {
+  .menuHam{
+display: none;
+  }
   
+}
+
+ 
+@media only screen and (max-width: 699px) {
+  
+  .headerHam{
+display: inline-flex;
+nav {
+border-radius: 20px;  
+width: 30%;
+  height: 20px;
+  background:#dd7513c9;
+  position: sticky;
+  top: 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+  }
 }
 
 header {
@@ -17,6 +38,7 @@ header {
   background-image: url(imgs/header.jpeg);
   box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
 }
+
 
 .social--face {
   display: inline-block;
