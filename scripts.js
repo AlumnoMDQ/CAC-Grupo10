@@ -13,4 +13,3 @@ inputs.forEach(input =>
         Object.assign(submitButton, { disabled: invalidForm() }),
     ),
 );
-

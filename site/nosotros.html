@@ -13,11 +13,13 @@
 </head>
 
 <body>
+
     <header class="headerHam">
     <a href="../index.html"><img id="logo"
         src="https://raw.githubusercontent.com/AlumnoMDQ/CAC-Grupo10/main/imgs/myfavlogo.png"
         alt="Logo del emprendimiento"></a>
-    <nav>
+        <button class="menuHam" aria-label="Toggle menu">&#9776;</button>
+        <nav>
         <ul>
                     <li><a accesskey="n" href="#">Nosotros</a></li>
                     <li class="dropdown"><a href="catalogo.html">Nuestros Trabajos</a>
@@ -38,6 +40,12 @@
             </nav>
         </div>
     </header>
+    <script>
+        document.querySelector('.menuHam').addEventListener('click', function() {
+          this.classList.toggle('active');
+          document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
     <main>
         <section id="historia">
         <h1 id="titulo">Nuestra historia</h1>
