@@ -20,7 +20,5 @@ const invalidForm = () => {
 inputs.forEach(input =>
     input.addEventListener("input", () => 
         Object.assign(submitButton, { disabled: invalidForm() }),
-    )
-);
-
-Object.assign(submitButton, { disabled: invalidForm() });
+    ),
+);      
