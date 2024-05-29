@@ -1,4 +1,4 @@
-/* General styles */
+  /* General styles */
 @media (prefers-reduced-motion: no-preference) {
   * {
     scroll-behavior: smooth;
@@ -7,15 +7,17 @@
   }
 }
 
+
 /* Estilos específicos para dispositivos móviles */
 @media only screen and (max-width: 700px) {
   .menuHam {
     display: block;
     font-size: 30px;
     cursor: pointer;
-    background: none;
-    border: none;
-    color: #dd7513c9;
+    background: white;
+    border: #dd7513 3px;
+    border-radius: 15%;
+    color: #000000;
   }
 
   nav {
@@ -35,19 +37,19 @@
   }
 
   .headerHam {
-    display: flex;
-    justify-content: space-between;
+    
     align-items: center;
   }
 
   .menuHam.active + nav {
     display: block;
+    align-items: center;
   }
 }
 
 /* Estilos generales para el header */
 header {
-  max-height: 70%;
+  max-height: 100%;
   background-color: #dd7513c9;
   background-image: url(imgs/header.jpeg);
   box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
