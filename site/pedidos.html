@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="headerHam">
+        <a href="../index.html"><img id="logo"
+                src="https://raw.githubusercontent.com/AlumnoMDQ/CAC-Grupo10/main/imgs/myfavlogo.png"
+                alt="Logo del emprendimiento"></a>
+        <button class="menuHam" aria-label="Toggle menu">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a accesskey="n" href="nosotros.html">Nosotros</a></li>
+                <li class="dropdown"><a href="catalogo.html">Nuestros Trabajos</a>
+
+                </li>
+                <li class="dropdown">
+                    <a href="promociones.html#logo">Promociones</a>
+                    <ul class="dropdown-content">
+                        <li><a href="promociones.html">Cumpleaños</a></li>
+                        <li><a href="promociones.html#Casamientos">Casamientos</a></li>
+                        <li><a href="promociones.html#Reuniones">Reuniones</a></li>
+                    </ul>
+                </li>
+                <li><a accesskey="c" href="contacto.html">Contacto</a></li>
+                <li><a href="formulario-registro-usuario.html">Registrarse</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.menuHam').addEventListener('click', function() {
+                this.classList.toggle('active');
+                document.querySelector('nav').classList.toggle('active');
+            });
+        });
+        
+    </script>
+
+    <h1>Realizá aquí tu Pedido</h1>
+
+    <form action="confirmacion-pedido.html" method="post">
+        <fieldset>
+            <legend>Información del Evento</legend>
+            <label for="tipo-evento">*Tipo de Evento:
+                <select id="tipo-evento" name="tipo-evento" required>
+                    <option value="" disabled selected>Seleccione un tipo de evento</option>
+                    <option value="casamiento">Casamiento</option>
+                    <option value="cumpleaños">Cumpleaños</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </label>
+            <br>
+            <label for="cantidad-personas">*Cantidad de Personas:
+                <select id="cantidad-personas" name="cantidad-personas" required>
+                    <option  value="" disabled selected>Selecciones la cantidad de personas</option>
+                    <option value="15">15 personas</option>
+                    <option value="30">30 personas</option>
+                    <option value="50">50 personas</option>
+                    <option value="80">80 personas</option>
+                </select>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Información de Contacto</legend>
+            <label for="nombre">*Nombre:
+                <input id="nombre" name="nombre" type="text" required>
+            </label>
+            <br>
+            <label for="apellido">*Apellido:
+                <input id="apellido" name="apellido" type="text" required>
+            </label>
+            <br>
+            <label for="email">*Email:
+                <input id="email" name="email" type="email" required>
+            </label>
+            <br>
+            <label for="telefono">*Teléfono:
+                <input id="telefono" name="telefono" type="tel" required>
+            </label>
+            <br>
+            <label for="mensaje">Mensaje:
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </label>
+        </fieldset>
+        <br>
+        <div>
+            <button class="botonEnviar" type="submit">Enviar Pedido</button>
+        </div>
+    </form>
+
+    <footer class="socialico">
+        <em>Seguinos en nuestras redes</em>
+        <div>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><span
+                    class="social--face"></span></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><span
+                    class="social--insta"></span></a>
+        </div>
+    </footer>
+</body>
+
+</html>

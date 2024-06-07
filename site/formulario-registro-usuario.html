@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmación registro</title>
+    <title>Registro usuario</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  
+
 </head>
 
 <body>
+
     <header class="headerHam">
         <a href="../index.html"><img id="logo"
                 src="https://raw.githubusercontent.com/AlumnoMDQ/CAC-Grupo10/main/imgs/myfavlogo.png"
@@ -34,25 +35,46 @@
                 </li>
                 <li><a accesskey="c" href="contacto.html">Contacto</a></li>
 
+
             </ul>
+
         </nav>
-        
+
     </header>
-    <script>
-        document.querySelector('.menuHam').addEventListener('click', function () {
-            this.classList.toggle('active');
-            document.querySelector('nav').classList.toggle('active');
-        });
-    </script>
+       <h1 id="titulo">Registro de Usuarios</h1>
+    <form action="confirmacion_registro.html" method="post">
+        <fieldset>
+            <label for="nombre">*Nombre:
+                <input id="nombre" name="nombre" type="text" required>
+            </label>
+            <br>
+            <label for="apellido">*Apellido:
+                <input id="apellido" name="apellido" type="text" required>
+            </label>
+            <br>
+            <label for="email">*Email:
+                <input id="email" name="email" type="email" required>
+            </label>
+            <br>
+            <label for="password">*Contraseña:
+                <input id="password" name="password" type="password" required>
+            </label>
+            <br>
+            <label for="confirm-password">*Confirmar Contraseña:
+                <input id="confirm-password" name="confirm-password" type="password" required>
+            </label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <em>* Campos obligatorios</em>
+        </fieldset>
+        <div>
+            <button class="botonEnviar" type="submit">Registrar</button>
+        </div>
+    </form>
 
-    <h1>¡Registro Exitoso!</h1>
-    <p>Gracias por registrarte. Serás redirigido al formulario de pedidos en breve.</p>
 
-    <script>
-        setTimeout(function () {
-            window.location.href = "pedidos.html";
-        }, 3000); // 3000 ms = 3 segundos
-    </script>
+
 
     <footer class="socialico">
         <em>Seguinos en nuestras redes</em>
@@ -63,6 +85,14 @@
                     class="social--insta"></span></a>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.menuHam').addEventListener('click', function () {
+                this.classList.toggle('active');
+                document.querySelector('nav').classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
