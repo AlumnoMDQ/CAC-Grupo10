@@ -363,10 +363,19 @@ form {
   margin: 0 auto;
 }
 #pasteleriafoto {
+<<<<<<< HEAD
   transition: transform 0.3s ease;
 }
 
 #pasteleriafoto:hover {
   transform: scale(1.1);
 }
+=======
+    transition: transform 0.3s ease;
+  }
+  
+  #pasteleriafoto:hover {
+    transform: scale(1.1);
+  }
+>>>>>>> master
 
