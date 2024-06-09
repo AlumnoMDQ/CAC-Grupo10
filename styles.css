@@ -49,10 +49,10 @@
 
 /* Estilos generales para el header */
 header {
-  max-height: 100%;
+  max-height:none;
   background-color: #dd7513c9;
-  background-image: url(imgs/header.jpeg);
-  box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+  background-image: url(imgs/banner-alt.jpg);
+  box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.50);
 }
 
 .social--face {
@@ -158,12 +158,12 @@ nav ul li:hover {
 }
 
 .parrafo {
-  text-align: center;
+  text-align: left;
   margin-left: 5%;
   margin-top: 5%;
   width: 90%;
   text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
   overflow-wrap: normal;
   writing-mode: horizontal-tb;
   color: #724502;
