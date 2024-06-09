@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Freebook HOME</title>
+        <link rel="Stylesheet" href="estilos.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        
+        <script src="https://kit.fontawesome.com/c101ab7deb.js" crossorigin="anonymous"></script>
+<!--Elección de la fuente-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Cabecera -->
+        <header>
+            <img src="im"
+            <img src="images/LogoFreeBook.jpg" class="logo" alt="LogoFreeBook">
+            <button class="account"><i class="fa-solid fa-cart-shopping"></i> Mi carrito</button>
+            <!--<button class="account"><i class="fa-solid fa-user"></i> Mi cuenta</button>-->
+
+            <button class="account" id="miCuentaBoton"><i class="fa-solid fa-user"></i> Mi cuenta</button>
+        
+        </header>
+        <div id="searchbar">
+            <input type="text" id="search" name="search" placeholder="Buscar en Freebook">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#something">Recomendaciones</a>
+            <a href="#something">Nuestros servicios</a>
+            <a href="#something">Guia de compra</a>
+        </nav>
+
+        <section id="Home">
+            <h2>Una vez que aprendas a leer, serás libre para siempre</h2>
+
+            <!-- "carrousel" de novedades -->
+            <div class="novedades">
+                <!-- otras imagenes del carrousel
+                <img src="images/Carrousel1.png">
+                <img src="images/Carrousel2.png">
+                <img src="images/Carrousel3.png"> -->
+                <img src="images/Carrousel4.png" alt="Testeo de ca">
+            </div>
+            <!-- About -->
+
+        </section>
+<section id="recomendados">
+            <!-- flexbox / grid test -->
+            <h2>Recomendaciones</h2>
+            <img src="images/libros/libro01.jpg" alt="Papel con sello de agua" class="portada">
+            <img src="images/libros/libro02.jpg" alt="respira" class="portada">
+            <img src="images/libros/libro03.jpg" alt="sheccid. Cuando el amor duele" class="portada">
+            <img src="images/libros/libro04.jpg" alt="gimnacio" class="portada">
+            <img src="images/libros/libro05.jpg" alt="Recuerda que has de morir" class="portada">
+            <img src="images/libros/libro06.jpg" alt="una victoria salvaje" class="portada">
+            <!-- <img src="images/libros/libro07.jpg" alt="morir es nada" class="portada">
+            <img src="images/libros/libro08.jpg" alt="Album de oro" class="portada">
+            <img src="images/libros/libro09.jpg" alt="El extraño caso de Yoda Origami" class="portada">
+            <img src="images/libros/libro10.jpg" alt="Encuentra tu persona vitamina" class="portada"> -->
+
+            <!-- <article class="prodLibro">
+                <div class="portada"></div>
+                <h3>Titulo del libro</h3>
+                <p class="descripcion">Autor, año de la edición <br>
+                    <b class="precio">$0,00</b>
+                </p>
+                <button type="submit">COMPRAR</button>
+            </article> -->
+        </section>
+        <footer>
+        
+            <section id="contactoInt">
+                <form action="post">
+                    <h3>formulario de contacto</h3>
+                    <label for="name">Nombre y apellido:</label><br>
+                    <input type="text" name="Nombre" id="name" placeholder="Elba Surero" required> <br>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" name="Mail" id="email" placeholder="example@correo.cum" required> <br>
+                    <label for="contactType">Razón de contacto:</label><br>
+                    <select name="TipoDeContacto" id="contactType">
+                        <option value="sugerencias">Sugerencias y/o Reclamos</option> 
+                        <option value="negocios">Contacto para empresas</option>
+                        <option value="otros">Otro...</option>
+                    </select><br>
+                    <label for="msj">Mensaje:</label><br>
+                    <textarea name="cuadroMensaje" id="msj" rows="10" cols="30" required></textarea><br>
+                    <input type="checkbox" name="newsletter" id="newsletter" value="noticiasPorCorreo"> <label for="newsletter"> ¿Desea recibir novedades por correo? </label>
+
+                    <br><br>
+                    <input type="submit">
+                </form>
+            </section>
+            <aside id="contactoExt">
+                <img src="images/ImgForm.png" alt=""><br>
+            </aside>
+        </footer>
+
+        
+        <script src="scripts/main.js"></script>
+        
+
+    </body>
+</html>
