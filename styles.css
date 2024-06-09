@@ -211,8 +211,8 @@ h4 {
 .fotoPaste{  
 height: fit-content;
 width: fit-content;
-  
 }
+
 .catalogoimg {
   border-radius: 20px;
   max-height: 60%;
@@ -362,20 +362,11 @@ form {
   height: 30px;
   margin: 0 auto;
 }
-#pasteleriafoto {
-<<<<<<< HEAD
-  transition: transform 0.3s ease;
-}
 
 #pasteleriafoto:hover {
   transform: scale(1.1);
 }
-=======
-    transition: transform 0.3s ease;
-  }
-  
-  #pasteleriafoto:hover {
+
+#pasteleriafoto:hover {
     transform: scale(1.1);
   }
->>>>>>> master
-
