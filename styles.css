@@ -80,7 +80,7 @@ header {pip install mysql-connector-python}
 body {
   background: rgb(238, 171, 107);
   background: linear-gradient(90deg, rgba(238, 171, 107), rgba(255, 243, 219), rgba(255, 243, 219), rgba(238, 171, 107));
-  font-family: "Inter", sans-serif;
+  font-family: "Atkinson Hyperlegible";
   font-style: normal;
 }
 
@@ -364,3 +364,29 @@ form {
     transform: scale(1.1);
   }
 
+
+  /* FUENTES */
+  .atkinson-hyperlegible-regular {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .atkinson-hyperlegible-bold {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .atkinson-hyperlegible-regular-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .atkinson-hyperlegible-bold-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  

@@ -1,0 +1,116 @@
+header{
+  background-image:url(images/banner.jpg); /*agrego banner de fondo*/
+  display: flexbox; /*header responsive*/
+  text-align: right;
+  font-family:"courgette";
+}
+
+.courgette-regular {
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+#logo{
+  max-width: 300px;
+  max-height: 400px;
+}
+
+.sociales{
+  height: 30px;
+  width: 30px;
+}
+
+nav{
+  text-align: center;
+  padding-top: 2%; padding-bottom: 2%;
+  height: 100%;
+  background-color:lavenderblush;
+}
+
+.link-item {
+  color: maroon;
+  text-decoration: none;
+  font-weight: regular;
+  position: relative;
+}
+ /* Aplicar estilo al botón desplegable */
+ .dropbtn {
+  background-color: mistyrose;
+  color: black;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* El contenedor <div> - necesario para posicionar el contenido desplegable*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* contenido desplegable (oculto por defecto) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links dentro del dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* ============================ IMPORTANTE ================================== */
+/*"Hover" es un SELECTOR que solo se activa cuando pasamos el MOUSE por encima*/
+/* ========================================================================== */
+
+/* cambiar el color del dropdown cuando se activa el Hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* mostrar el menu dropdown al pasarle por encima el mouse*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Cambiar el color de fondo del botón cuando se muestra el contenido */
+.dropdown:hover, .dropbtn:hover {
+  background-color: lightsalmon;
+}
+
+/* Trabajo previo de alicia: */
+
+
+/* .logo {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: mistyrose;
+  padding: 0 0.4rem;;
+}
+.social-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vh;
+  margin-left: -100vh;
+  transition: all 0.2s linear;
+  z-index: 100;
+  background-color: MistyRose;
+}
+  
+.social-nav.show {
+    margin-left: 0;
+}
+  
+
+
