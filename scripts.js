@@ -20,7 +20,6 @@ const invalidForm = () => {
         return true; // Devuelve true indicando que el formulario es inválido
     }
 
-    // Verificar la validez de los demás campos de entrada
     return inputs.some(input => !input.validity.valid);
 };
 
